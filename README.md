@@ -1,4 +1,4 @@
-### Auto 復霊（Chinese Server）
+### Auto 複霊（Chinese Server）
 
 ### Tutorial
 `git clone git@github.com:KirisameVanilla/AutoFukurei.git`
