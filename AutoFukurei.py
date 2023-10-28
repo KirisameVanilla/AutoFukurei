@@ -31,6 +31,8 @@ if __name__=='__main__':
         touch(Template(r"tpl/tpl1698336982880.png", record_pos=(0.393, 0.226), resolution=(1600, 900)))
 
         wait(Template(r"tpl/tpl1698336273325.png", record_pos=(0.363, 0.24), resolution=(1600, 900)))
+        assert_not_exists(Template(r"tpl/tpl1698464484711.png", record_pos=(0.339, -0.129), resolution=(1600, 900)), "End")
+
         time.sleep(1)
         touch(Template(r"tpl/tpl1698336273325.png", record_pos=(0.363, 0.24), resolution=(1600, 900)))
         wait(Template(r"tpl/tpl1698335301968.png", record_pos=(0.002, 0.191), resolution=(1600, 900)))
