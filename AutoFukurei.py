@@ -36,6 +36,7 @@ if __name__ == '__main__':
         wait(Template(r"tpl/RecordStart.png", record_pos=(0.339, 0.216), resolution=(1600, 900)))
         time.sleep(1)
         touch((1335, 785))
+        time.sleep(60)
         wait(Template(r"tpl/AwdGet.png", record_pos=(-0.003, -0.182), resolution=(1600, 900)), timeout=240)
         time.sleep(1)
         touch((1300, 700))
