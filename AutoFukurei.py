@@ -12,8 +12,6 @@ if not cli_setup():
         "Android:///emulator-5554?cap_method=javacap&ori_method=adbori",
     ])
 
-auto_setup(__file__)
-
 if __name__ == '__main__':
     wait(Template(r"tpl/Challenge.png", record_pos=(0.249, 0.228), resolution=(1600, 900)))
     time.sleep(1)
