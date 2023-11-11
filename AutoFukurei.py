@@ -12,7 +12,8 @@ if not cli_setup():
         "Android:///emulator-5554?cap_method=javacap&ori_method=adbori",
     ])
 
-if __name__ == '__main__':
+
+def start_Fukurei():
     wait(Template(r"tpl/Challenge.png", record_pos=(0.249, 0.228), resolution=(1600, 900)))
     time.sleep(1)
     if not exists(Template(r"tpl/LevelAddUp.png", record_pos=(-0.079, 0.122), resolution=(1600, 900))):
@@ -53,7 +54,15 @@ if __name__ == '__main__':
         time.sleep(1)
         touch((1400, 820))
 
-        # delete running temp pics
-        temp_pics = [p for p in os.listdir() if p.endswith('.jpg')]
-        for pic in temp_pics:
-            os.remove(pic)
+        clear_up_temp()
+
+
+def clear_up_temp():
+    # delete running temp pics
+    temp_pics = [p for p in os.listdir() if p.endswith('.jpg')]
+    for pic in temp_pics:
+        os.remove(pic)
+
+
+if __name__ == '__main__':
+    start_Fukurei()
