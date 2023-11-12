@@ -4,12 +4,13 @@ __author__ = "KirisameVanilla"
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
 from airtest.core.settings import Settings
+from get_adb_address import get_adb_address as get_adb
 
 Settings.THRESHOLD = 0.8
-os.system('adb devices')
+
 if not cli_setup():
     auto_setup(devices=[
-        "Android:///emulator-5554?cap_method=javacap&ori_method=adbori",
+        f"Android:///{get_adb()}?cap_method=javacap&ori_method=adbori",
     ])
 
 
