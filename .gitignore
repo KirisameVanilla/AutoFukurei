@@ -1,3 +1,4 @@
 [0-9]*.jpg
 /venv/
 /.idea/
+/__pycache__/
